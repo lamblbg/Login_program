@@ -13,6 +13,12 @@ class UserModel {
     return users[0]
   }
 
+  async findByAccount(account) {
+    const users = await User.find({ account })
+    if (users.length == 0) return null
+    return users[0]
+  }
+
   async findByAccountAndPwd(account, password) {
     const users = await User.find({ account, password })
     if (users.length == 0) return null
@@ -21,6 +27,10 @@ class UserModel {
 
   async create(config) {
     return await User.create(config)
+  }
+
+  async update(filter, newData) {
+    return await User.updateOne(filter, newData)
   }
 }
 

@@ -1,5 +1,5 @@
 {
-  "name": "cloud-album",
+  "name": "",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@alicloud/dysmsapi20170525": "3.0.0",
+    "@alicloud/openapi-client": "^0.4.8",
+    "@alicloud/tea-console": "^1.0.0",
+    "@alicloud/tea-typescript": "^1.7.1",
+    "@alicloud/tea-util": "^1.4.7",
     "axios": "^1.7.2",
+    "jsonwebtoken": "^9.0.2",
     "koa": "^2.15.3",
     "koa-bodyparser": "^4.4.1",
     "koa-router": "^12.0.1",

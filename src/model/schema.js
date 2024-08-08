@@ -3,8 +3,6 @@ const mongoose = require('mongoose')
 const userSchema = new mongoose.Schema({
   openid: {
     type: String,
-    index: true,
-    unique: true
   },
   created: {
     type: Date,
@@ -15,10 +13,9 @@ const userSchema = new mongoose.Schema({
   },
   account: {
     type: String,
-    index: true
   },
   password: {
-    type: String, 
+    type: String,
   },
   avatar: {
     type: String
